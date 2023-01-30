@@ -5,6 +5,7 @@ body {
     background: #fff;
     color: var(--black-color);
 }
+
 a {
     color: var(--main-color);
     text-decoration: none;
@@ -50,7 +51,7 @@ a {
 }
 
 .why-fiber {
-    margin: 4rem 0 4rem 0;
+    margin: var(--margin-4-rem) 0 var(--margin-4-rem) 0;
 }
 
 .about-us-title {
@@ -93,15 +94,15 @@ a {
 }
 
 .start-free-trial {
-    margin-bottom: 4rem;
+    margin-bottom: var(--margin-4-rem);
 }
 
 .start-free-trial-btn {
     background: #fff;
-    padding: 1.3rem 1.4rem;
+    padding: 1.1rem 1.4rem;
     border-radius: 5px;
     font-weight: 700;
-    font-size: 1.1rem;
+    font-size: 1.0rem;
     display: block;
     width: max-content;
     border: 2px solid #fff;
@@ -144,6 +145,18 @@ footer > .container {
     flex: 36% 0 1;
 }
 
+.about-footer h2 {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.about-footer p {
+    display: block;
+    line-height: 25px;
+    margin-bottom: var(--margin-2-rem);
+    color: var(--lighter-color);
+}
+
 .footer-links {
     flex: 58% 0 1;
     display: flex;
@@ -163,7 +176,7 @@ footer > .container {
 }
 
 .footer-links > ul > li > a {
-    color: var(--body-color);
+    color: var(--lighter-color);
     position: relative;
     z-index: 1111;
     transition: all 0.4s;
@@ -191,15 +204,4 @@ footer > .container {
 
 .footer-links > ul > li > a:hover {
     color: var(--main-color);
-}
-
-
-.about-footer h2 {
-    margin-bottom: 1rem;
-}
-
-.about-footer p {
-    display: block;
-    line-height: 25px;
-    margin-bottom: 2rem;
-}
+} 
