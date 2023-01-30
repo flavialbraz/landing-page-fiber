@@ -1,5 +1,9 @@
 # 🖥️ Projeto Fiber Landing Page
 
+<img src="src/img/captura-header" alt="Captura da header da landing page">
+
+
+
 ## Descrição
 Projeto realizado em colaboração para que fosse feito treinamento de trabalho em equipe, git, github, gerenciamento de tempo e praticar as hardskills apresentadas abaixo.
 
@@ -15,8 +19,8 @@ Projeto realizado em colaboração para que fosse feito treinamento de trabalho 
 
 
 ## 🖱️ A página
-<img src="src/img/designer-desktop-e-responsivo.gif" alt="gif mostrando tela do desktop e responsividade">
-
+<img src="src/img/designer-desktop-e-responsivo.gif" alt="Gif exibindo o desktop e versão mobile do site">
+> Acesse online: 
 
  
 
