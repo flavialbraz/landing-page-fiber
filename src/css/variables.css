@@ -1,7 +1,7 @@
 :root{
-    --button: #4D13D1;
+    --main-color: #4D13D1;
     --bc: #FBF8F3;
-    --fs: #4F4F4F;
-    --dark: #000000;
+    --lighter-color: #4F4F4F;
+    --black-color: #000000;
     --light: #ffffff;
 }

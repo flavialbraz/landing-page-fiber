@@ -1,0 +1,54 @@
+
+@media (max-width: 500px) { 
+
+    .container {
+        max-width: 85%;
+    }
+    
+    .about-us-title h2 {
+        width: 100%;
+    }
+    
+    ul.card-about-us {
+        flex-direction: column;
+    }
+    
+    .container-free-trial {
+        flex-direction: column;
+    }
+    
+    .text-start {
+        margin-bottom: 2rem;
+    }
+    
+    .img-start {
+        margin-bottom: -52px;
+    }
+    
+    .start-free-trial-btn {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .about-footer {
+        flex: 100% 1 1;
+    }
+    
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer-links ul {
+        margin-bottom: 2rem;
+    }
+    
+    .card-about-us > li {
+        margin-bottom: 1rem;
+    }
+    
+    footer {
+        padding: 4rem 0rem 2rem 0rem;
+    }
+    
+    }
