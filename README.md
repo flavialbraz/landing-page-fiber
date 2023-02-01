@@ -19,7 +19,8 @@ Projeto realizado em colaboração para que fosse feito treinamento de trabalho 
 
 
 ## 🖱️ A página
-<img src="src/img/designer-desktop-e-responsivo.gif" alt="Gif exibindo o desktop e versão mobile do site">
+<img src="src/img/designer-desktop-e-responsivo.gif" alt="Gif exibindo o desktop e versão mobile do site">   
+
 > Acesse online: 
 
  

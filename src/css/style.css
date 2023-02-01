@@ -6,16 +6,55 @@ body {
     color: var(--black-color);
 }
 
-a {
-    color: var(--main-color);
-    text-decoration: none;
-}
-
 .container {
     max-width: 1000px;
     margin: auto;
 }
 
+.header, nav, .menu, .register{
+    display: flex;
+    gap: 3rem;
+} 
+
+.header{
+    background-color: var(--bc);
+    margin: auto;
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 11rem 0 11rem;
+}
+
+.header .register li .btn-signin:hover{
+    color: var(--main-color);
+}
+
+.header .register li .btn-signup:hover{
+    background-color: var(--main-color);
+    color: var(--light);
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+main .hero .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+main .hero .container .info .rating{
+    display: flex;
+}
+  
+
+
+main .container .info .img{
+    width: 2rem;
+}
 .about-us-title strong {
     color: var(--main-color);
     margin-bottom: 0.9rem;
@@ -62,7 +101,7 @@ a {
     background: var(--main-color);
     padding: 3rem;
     border-radius: 10px;
-    color: #fff;
+    color: var(--light);
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
@@ -99,6 +138,7 @@ a {
 
 .start-free-trial-btn {
     background: #fff;
+    color: var(--black-color);
     padding: 1.1rem 1.4rem;
     border-radius: 5px;
     font-weight: 700;
@@ -175,14 +215,16 @@ footer > .container {
     display: block;
 }
 
-.footer-links > ul > li > a {
+.footer-links > ul > li > a,
+.menu li a {
     color: var(--lighter-color);
     position: relative;
     z-index: 1111;
     transition: all 0.4s;
 }
 
-.footer-links > ul > li > a:before {
+.footer-links > ul > li > a::before,
+.menu li a::before {
     content: "";
     position: absolute;
     left: 0;
@@ -195,13 +237,15 @@ footer > .container {
     opacity: 0;
 }
 
-.footer-links > ul > li > a:hover:before {
+.footer-links > ul > li > a:hover:before,
+.menu li a:hover:before {
     height: 1%;
     width: 100%;
     transition: all 0.8s;
     opacity: 0.9;
 }
 
-.footer-links > ul > li > a:hover {
+.footer-links > ul > li > a:hover,
+.menu li a:hover {
     color: var(--main-color);
 } 
