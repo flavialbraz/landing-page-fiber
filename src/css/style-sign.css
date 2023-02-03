@@ -23,9 +23,16 @@
     padding: 1.2rem 1rem;
     border-radius: 5px;
     display: block;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.4rem;
     width: 100%;
 }
+
+.msg-error {
+    margin-bottom: 2rem;
+    color: #f44336;
+    font-weight: 600;
+}
+
 
 .form-sign-up-area label {
     display: block;
