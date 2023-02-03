@@ -1,0 +1,149 @@
+.container-sign .logo {
+    width: 100%;
+    margin-bottom: 4rem;
+    font-size: 0.9rem;
+}
+
+.container-sign {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.form-sign-up-area {
+    padding: var(--margin-2-rem) var(--margin-2-rem) var(--margin-2-rem) 0;
+    margin: auto;
+    flex: 1;
+    max-width: 22%;
+}
+
+.form-sign-up-area input {
+    border: 1px solid #00000024;
+    padding: 1.2rem 1rem;
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+.form-sign-up-area label {
+    display: block;
+    margin-bottom: 0.8rem;
+    font-weight: 700;
+}
+
+.form-sign-up-area input::placeholder {
+    opacity: 0.8;
+    font-size: 16px;
+    font-family: 'Inter';
+}
+
+.form-sign-up-area h1 {
+    font-weight: 900;
+    font-size: 2rem;
+    margin-bottom: var(--margin-4-rem);
+}
+
+.about-sign-up-area {
+    background: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    flex: 1;
+    max-width: 49%;
+    padding: 2rem;
+}
+
+.about-sign-up-area img {
+    margin-bottom: var(--margin-2-rem);
+}
+.about-sign-up-area h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about-sign-up-area p {
+    opacity: 0.8;
+    font-weight: 300;
+    width: 50%;
+    font-size: 1.15rem;
+}
+
+.btn-style-btn.signup-btn {
+    color: #fff;
+    background: var(--main-color);
+    padding: 1.4rem 1.6rem;
+    border-radius: 5px;
+    font-size: 1.0rem;
+    display: block;
+    width: 100%;
+    border: 2px solid #fff;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: var(--margin-2-rem) 0px var(--margin-2-rem) 0px;
+    font-family: 'Inter';
+    font-weight: 500;
+}
+
+.form-sign-up-area > p {
+    text-align: center;
+}
+
+.form-sign-up-area > p > a, .form-sign-up-area a {
+    color: var(--main-color);
+    font-weight: 600;
+    transition: 0.7s all;
+}
+
+.btn-style-btn.signup-btn:hover {
+    color: var(--main-color);
+    background: #dddddd2b;
+    border: 2px solid var(--main-color);
+}
+
+.form-sign-up-area > p > a:hover, .form-sign-up-area a:hover {
+    opacity: 0.6;
+    transition: 0.7s all;
+}
+
+.agree-signup-box {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 3rem;
+}
+
+.check-signup {
+    max-width: max-content;
+}
+
+.about-sign-up-area img {
+    max-width: 55%;
+}
+ 
+.agree-signup-box input, .agree-signup-box label {
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width: 500px) { 
+    .form-sign-up-area {
+        max-width: 100%;
+        padding: 2rem;
+    }
+    
+    .container-sign {
+        flex-direction: column;
+    }
+    
+    .container-sign {
+        flex-direction: column;
+        margin-top: 4rem;
+    }
+    .about-sign-up-area {
+        display: none;
+    }
+    }
