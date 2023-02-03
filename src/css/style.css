@@ -50,11 +50,47 @@ main .hero .container .info .rating{
     display: flex;
 }
   
-
-
-main .container .info .img{
-    width: 2rem;
+main .hero .container .img{
+    width: 85%;
 }
+
+main .hero .container .info .rating{
+    display: flex;
+    align-items: center;
+}
+
+main .hero .container .info .rating p{
+    font-size: 0.9rem;
+    padding-left: 1rem;
+}
+
+main .hero .container .info h1{
+    font-size: 2.9rem;
+    padding: 1rem 0 1rem 0;
+}
+
+
+
+main .hero .container .info ul {
+    display: flex;
+    padding-top: 1rem;
+    gap: 2rem;
+}
+
+main .hero .container .info .bonus li{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-inline: 0.5rem ;
+}
+
+main .hero .container .info .bonus li::before{
+    content: url(../images/Checkmark.svg);
+    
+    
+}
+
+
 .about-us-title strong {
     color: var(--main-color);
     margin-bottom: 0.9rem;
@@ -216,7 +252,8 @@ footer > .container {
 }
 
 .footer-links > ul > li > a,
-.menu li a {
+.menu li a,
+main .hero .container .info ul li a{
     color: var(--lighter-color);
     position: relative;
     z-index: 1111;
@@ -224,7 +261,8 @@ footer > .container {
 }
 
 .footer-links > ul > li > a::before,
-.menu li a::before {
+.menu li a::before,
+main .hero .container .info ul li a::before {
     content: "";
     position: absolute;
     left: 0;
@@ -237,8 +275,9 @@ footer > .container {
     opacity: 0;
 }
 
-.footer-links > ul > li > a:hover:before,
-.menu li a:hover:before {
+.footer-links > ul > li > a:hover::before,
+.menu li a:hover::before,
+main .hero .container .info ul li a::before {
     height: 1%;
     width: 100%;
     transition: all 0.8s;
@@ -246,6 +285,7 @@ footer > .container {
 }
 
 .footer-links > ul > li > a:hover,
-.menu li a:hover {
+.menu li a:hover,
+main .hero .container .info ul li a:hover {
     color: var(--main-color);
 } 
