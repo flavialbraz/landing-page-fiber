@@ -1,78 +1,92 @@
+@media (max-width: 900px) {
+  header .fa-bars {
+    display: block;
+  }
 
-@media (max-width: 800px) { 
+  header .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    gap: 0;
+    z-index: -1;
+  }
 
-    .header, nav, .menu, .register{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 1rem;
-        height: 30%;
-    }
+  header #toggler:checked ~ .navbar {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
 
-    .header{
-        padding: 2rem 0 2rem 0;
-    }
+  header .navbar a {
+    margin: 0.5rem;
+    padding: 0.2rem;
+    background: #fff;
+    display: block;
+  }
 
-    .container {
-        max-width: 85%;
-    }
+  .container {
+    max-width: 85%;
+  }
 
-    .hero .container{
-        display: flex;
-        flex-direction: column-reverse;
-        gap: 1rem;
-    }
+  .hero .container {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
 
-    .hero .container .info ul{
-        display: flex;
-        flex-direction: column;
-        margin-top: 2rem;
-    }
-    
-    .about-us-title h2 {
-        width: 100%;
-    }
-    
-    ul.card-about-us {
-        flex-direction: column;
-    }
-    
-    .container-free-trial {
-        flex-direction: column;
-    }
-    
-    .text-start {
-        margin-bottom: 2rem;
-    }
-    
-    .img-start {
-        margin-bottom: -52px;
-    }
-    
-    .start-free-trial-btn {
-        width: 100%;
-        text-align: center;
-    }
-    
-    .about-footer {
-        flex: 100% 1 1;
-    }
-    
-    .footer-links {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .footer-links ul {
-        margin-bottom: 2rem;
-    }
-    
-    .card-about-us > li {
-        margin-bottom: 1rem;
-    }
-    
-    footer {
-        padding: 4rem 0rem 2rem 0rem;
-    }
-    }
+  .hero .container .info ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+
+  .about-us-title h2 {
+    width: 100%;
+  }
+
+  ul.card-about-us {
+    flex-direction: column;
+  }
+
+  .container-free-trial {
+    flex-direction: column;
+  }
+
+  .text-start {
+    margin-bottom: 2rem;
+  }
+
+  .img-start {
+    margin-bottom: -52px;
+  }
+
+  .start-free-trial-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-footer {
+    flex: 100% 1 1;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-links ul {
+    margin-bottom: 2rem;
+  }
+
+  .card-about-us > li {
+    margin-bottom: 1rem;
+  }
+
+  footer {
+    padding: 4rem 0rem 2rem 0rem;
+  }
+}

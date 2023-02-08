@@ -4,32 +4,60 @@ body {
     font-family: 'Inter', sans-serif;
     background: #fff;
     color: var(--black-color);
+    margin: auto;
 }
+header {
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--bc);
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 11rem 0 11rem;
+  }
+
+  header .logo {
+    font-size: 3rem;
+    color: #333;
+    font-weight: 700;
+  }
+
+  header .navbar{
+    display: flex;
+    gap: 3rem;
+  }
+
+  header .navbar a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  header .navbar a:hover {
+    color: var(--main-color);
+  }
+
+  header #toggler {
+    display: none;
+  }
+
+  header .fa-bars {
+    font-size: 3rem;
+    color: #333;
+    border-radius: 1rem;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    margin-right: 1rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0.3);
+    display: none;
+  }
 
 .container {
     max-width: 1000px;
     margin: auto;
-}
-
-.header, nav, .menu, .register{
-    display: flex;
-    gap: 3rem;
-} 
-
-.header{
-    background-color: var(--bc);
-    margin: auto;
-    width: 100%;
-    height: 8rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 11rem 0 11rem;
-}
-
-.header .register li .btn-signin:hover,
-.header .register li .btn-signup:hover{
-    color: var(--main-color);
 }
 
 .hero .container{
@@ -301,7 +329,8 @@ footer > .container {
     justify-content: space-between;
 }
 
-.footer-links > ul > li {
+.footer-links > ul > li,
+.nav li a {
     list-style: none;
     margin-bottom: 0.8rem;
     font-size: 1.1rem;
@@ -314,8 +343,8 @@ footer > .container {
 }
 
 .footer-links > ul > li > a,
-.menu li a,
-main .hero .container .info ul li a{
+main .hero .container .info ul li a,
+.nav li a{
     color: var(--lighter-color);
     position: relative;
     z-index: 1111;
@@ -323,8 +352,8 @@ main .hero .container .info ul li a{
 }
 
 .footer-links > ul > li > a::before,
-.menu li a::before,
-main .hero .container .info ul li a::before {
+main .hero .container .info ul li a::before,
+.nav li a::before {
     content: "";
     position: absolute;
     left: 0;
@@ -338,8 +367,8 @@ main .hero .container .info ul li a::before {
 }
 
 .footer-links > ul > li > a:hover::before,
-.menu li a:hover::before,
-main .hero .container .info ul li a::before {
+main .hero .container .info ul li a::before,
+.nav li a::before {
     height: 1%;
     width: 100%;
     transition: all 0.8s;
@@ -347,7 +376,7 @@ main .hero .container .info ul li a::before {
 }
 
 .footer-links > ul > li > a:hover,
-.menu li a:hover,
-main .hero .container .info ul li a:hover {
+main .hero .container .info ul li a:hover,
+.nav li a:hover {
     color: var(--main-color);
 } 

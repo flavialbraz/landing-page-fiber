@@ -7,47 +7,46 @@
     <link rel="stylesheet" href="src/css/resets.css" />
     <link rel="stylesheet" href="src/css/variables.css" />
     <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/menu.css" />
     <link rel="stylesheet" href="src/css/responsive.css" />
     <title>Fiber</title>
   </head>
   <body>
+    <header>
+      <input type="checkbox" name="" id="toggler" />
+      <label for="toggler" class="fas fa-bars"></label>
 
-    <header class="header">
-      <div class="logo">
-        <h2>Fiber</h2>
-      </div>
-      <nav>
-        <ul class="menu">
-          <li><a href="#">Community</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Features</a></li>
-        </ul>
-        
+      <a href="#" class="logo">Fiber</a>
+
+      <nav class="navbar">
+        <li><a href="#">Community</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Features</a></li>
+        <li>
+          <a class="btn-signin" href="./src/pages/siginin.html"
+            ><b>Sing In</b></a
+          >
+        </li>
+        <li>
+          <a class="btn-signup" href="./src/pages/siginup.html">Sign Up</a>
+        </li>
       </nav>
-      <ul class="register">
-        <li><a class="btn-signin" href="./src/pages/siginin.html"><b>Sing In</b></a></li>
-        <li><a class="btn-signup" href="./src/pages/siginup.html">Sign Up</a></li>
-      </ul>
     </header>
 
-   
-
     <main>
-    
       <section class="hero">
         <div class="container">
           <div class="info">
             <div class="rating">
               <div class="stars">
-                <img src="src/images/star.svg" alt="imagem de estrela">
-                <img src="src/images/star.svg" alt="imagem de estrela">
-                <img src="src/images/star.svg" alt="imagem de estrela">
-                <img src="src/images/star.svg" alt="imagem de estrela">
-                <img src="src/images/star.svg" alt="imagem de estrela">
+                <img src="src/images/star.svg" alt="imagem de estrela" />
+                <img src="src/images/star.svg" alt="imagem de estrela" />
+                <img src="src/images/star.svg" alt="imagem de estrela" />
+                <img src="src/images/star.svg" alt="imagem de estrela" />
+                <img src="src/images/star.svg" alt="imagem de estrela" />
               </div>
-              
-              <p>Rated 4.8/5 (243 reviews)</p>
 
+              <p>Rated 4.8/5 (243 reviews)</p>
             </div>
 
             <h1>Create your portfolio in minutes.</h1>
@@ -61,161 +60,179 @@
               <li><a href="#">Start Free Trial</a></li>
               <li><a href="#">View Examples</a></li>
             </ul>
-  
+
             <ul class="bonus">
               <li>No Credit Required</li>
               <li>10 Free Templates</li>
             </ul>
           </div>
 
-          
-
           <div class="img">
-            <img src="src/images/hero-Illustration.png" alt="imagem de um boneco jogando video-game">
+            <img
+              src="src/images/hero-Illustration.png"
+              alt="imagem de um boneco jogando video-game"
+            />
           </div>
         </div>
-        
       </section>
-     
 
       <section class="why-fiber">
         <div class="container">
-
           <div class="about-us-title">
             <strong>Why Fiber?</strong>
             <h2>A good portfolio means good employability.</h2>
           </div>
 
           <ul class="card-about-us">
-              <li> 
-                  <img src="./src/images/time.svg" alt="">
-                  <h3>Build in minutes</h3>
-                  <p>With a selection of premades templates, you can build out a portfolio in less than 10 minutes.</p>
-              </li>
-
-              <li> 
-                <img src="./src/images/code.svg" alt="">
-                <h3>Add custom CSS</h3>
-                <p>Customize your personal portfolio even more with the ability to add your own custom CSS code. </p>
+            <li>
+              <img src="./src/images/time.svg" alt="" />
+              <h3>Build in minutes</h3>
+              <p>
+                With a selection of premades templates, you can build out a
+                portfolio in less than 10 minutes.
+              </p>
             </li>
 
-            <li> 
-              <img src="./src/images/allSizes.svg" alt="">
-              <h3>Responsive</h3>
-              <p>All fiber templates are fully responsive to ensure the experience is seamless across all devices. </p>
-          </li>
-        </ul>
+            <li>
+              <img src="./src/images/code.svg" alt="" />
+              <h3>Add custom CSS</h3>
+              <p>
+                Customize your personal portfolio even more with the ability to
+                add your own custom CSS code.
+              </p>
+            </li>
 
+            <li>
+              <img src="./src/images/allSizes.svg" alt="" />
+              <h3>Responsive</h3>
+              <p>
+                All fiber templates are fully responsive to ensure the
+                experience is seamless across all devices.
+              </p>
+            </li>
+          </ul>
         </div>
       </section>
 
       <section class="start-free-trial">
-        <div class="container container-free-trial"> 
-        <div class="text-start">
-          <h2>Diversify your portfolio.</h2>
-          <p>Create an even more impressive portfolio by creating case studies for your projects. Simply follow your style-by-step guide.</p>
+        <div class="container container-free-trial">
+          <div class="text-start">
+            <h2>Diversify your portfolio.</h2>
+            <p>
+              Create an even more impressive portfolio by creating case studies
+              for your projects. Simply follow your style-by-step guide.
+            </p>
 
-          <a href="#" class="start-free-trial-btn"> Start Free Trial </a>
+            <a href="#" class="start-free-trial-btn"> Start Free Trial </a>
+          </div>
+
+          <div class="img-start">
+            <img src="./src/images/Page Image.png" alt="" />
+          </div>
         </div>
+      </section>
 
-        <div class="img-start">
-          <img src="./src/images/Page Image.png" alt="">
+      <section class="comments">
+        <div class="container">
+          <div class="card-comments">
+            <div class="profile">
+              <img src="src/images/User Avatar 32.svg" alt="avatar" />
+              <h4>Sara Andrews <span>$100k in revenue</span></h4>
+            </div>
+
+            <div class="info-comments">
+              <p>
+                Setting up my portfolio with Fiber took no more than 10 minutes.
+                Since then, my portfolio has attracted a lot of clients and made
+                me more than $100k.
+              </p>
+
+              <button>View Sarah's Portfolio</button>
+            </div>
+          </div>
+
+          <div class="card-comments">
+            <div class="profile">
+              <img src="src/images/User Avatar 2.svg" alt="avatar" />
+              <h4>Mathew Higgins <span>$20 in revenue</span></h4>
+            </div>
+
+            <div class="info-comments">
+              <p>
+                I have been getting A LOT of leads ever since I used Fiber's
+                premade templates, now I just need to work on my case studies
+                and I'll be ready to go!
+              </p>
+
+              <button>View Mathew's Portfolio</button>
+            </div>
+          </div>
+
+          <div class="card-comments">
+            <div class="profile">
+              <img src="src/images/User Avatar 32.svg" alt="avatar" />
+              <h4>Janice Dave <span>$30 in revenue</span></h4>
+            </div>
+
+            <div class="info-comments">
+              <p>
+                Setting up my portfolio with Fiber took no more than 10 minutes.
+                Since then, my portfolio has attracted a lot of clients and made
+                me more than $100k.
+              </p>
+
+              <button>View Janice's Portfolio</button>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
-
-    <section class="comments">
-      <div class="container">
-
-        <div class="card-comments">
-          <div class="profile">
-            <img src="src/images/User Avatar 32.svg" alt="avatar">
-            <h4>Sara Andrews <span>$100k in revenue</span></h4>
-          </div>
-
-          <div class="info-comments">
-            <p>Setting up my portfolio with Fiber took no more than 10 minutes. Since then, my portfolio has attracted a lot of clients and made me more than $100k.</p>
-
-            <button>View Sarah's Portfolio</button>
-          </div>
-
-        </div>
-
-        <div class="card-comments">
-          <div class="profile">
-            <img src="src/images/User Avatar 2.svg" alt="avatar">
-            <h4>Mathew Higgins <span>$20 in revenue</span></h4>
-          </div>
-
-          <div class="info-comments">
-            <p>I have been getting A LOT of leads ever since I used Fiber's premade templates, now I just need to work on my case studies and I'll be ready to go!</p>
-
-            <button>View Mathew's Portfolio</button>
-          </div>
-
-        </div>
-
-        <div class="card-comments">
-          <div class="profile">
-            <img src="src/images/User Avatar 32.svg" alt="avatar">
-            <h4>Janice Dave <span>$30 in revenue</span></h4>
-          </div>
-
-          <div class="info-comments">
-            <p>Setting up my portfolio with Fiber took no more than 10 minutes. Since then, my portfolio has attracted a lot of clients and made me more than $100k.</p>
-
-            <button>View Janice's Portfolio</button>
-          </div>
-
-        </div>
-
-
-      </div>
-    </section>
+      </section>
     </main>
-    
-    
-    <footer>
-      <div class="container"> 
-        <div class="about-footer">
-          <h2> Fiber </h2>
-          <p>With Faber, you can setp your own personal portfolio in minutes with dozens of premades, beautiful templates.</p>
 
-          <p>Made with ❤ </p>
+    <footer>
+      <div class="container">
+        <div class="about-footer">
+          <h2>Fiber</h2>
+          <p>
+            With Faber, you can setp your own personal portfolio in minutes with
+            dozens of premades, beautiful templates.
+          </p>
+
+          <p>Made with ❤</p>
         </div>
 
         <div class="footer-links">
-
           <ul>
             <li><strong> Site map </strong></li>
-            <li> <a href="#">Home page</a> </li>
-            <li> <a href="#">Pricing</a> </li>
-            <li> <a href="#">Testimonials</a> </li>
-            <li> <a href="#">Features</a> </li>
+            <li><a href="#">Home page</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Features</a></li>
           </ul>
 
           <ul>
             <li><strong> Resources </strong></li>
-            <li> <a href="#">Support</a> </li>
-            <li> <a href="#">Contact</a> </li>
-            <li> <a href="#">FAQ</a> </li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">FAQ</a></li>
           </ul>
 
           <ul>
             <li><strong> Company </strong></li>
-            <li> <a href="#">About</a> </li>
-            <li> <a href="#">Customers</a> </li>
-            <li> <a href="#">Blog</a> </li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Customers</a></li>
+            <li><a href="#">Blog</a></li>
           </ul>
 
           <ul>
             <li><strong> Portfolios </strong></li>
-            <li> <a href="#">Sarah Andrews</a> </li>
-            <li> <a href="#">Mathew Higgins</a> </li>
-            <li> <a href="#">Janice Dave</a> </li>
+            <li><a href="#">Sarah Andrews</a></li>
+            <li><a href="#">Mathew Higgins</a></li>
+            <li><a href="#">Janice Dave</a></li>
           </ul>
         </div>
-        </div>
+      </div>
     </footer>
+
+    <script src="src/js/script.js"></script>
   </body>
 </html>
