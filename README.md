@@ -14,7 +14,6 @@ Projeto realizado em colaboração para que fosse feito treinamento de trabalho 
 - Propriedades personalizadas de CSS3
 - Flexbox  
 - Design responsivo
-- JavaScript
     
 
 
