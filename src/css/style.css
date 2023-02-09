@@ -7,6 +7,7 @@ body {
     margin: auto;
 }
 header {
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -66,6 +67,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 8rem;
     
 
 }
@@ -112,6 +114,11 @@ header {
     content: url(../images/Checkmark.svg);
     
     
+}
+
+.hero .container .info ul li a:hover{
+    color: var(--main-color);
+    font-weight: 700;
 }
 
 
@@ -345,7 +352,6 @@ footer > .container {
 }
 
 .footer-links > ul > li > a,
-main .hero .container .info ul li a,
 .nav li a{
     color: var(--lighter-color);
     position: relative;
@@ -354,7 +360,6 @@ main .hero .container .info ul li a,
 }
 
 .footer-links > ul > li > a::before,
-main .hero .container .info ul li a::before,
 .nav li a::before {
     content: "";
     position: absolute;
@@ -369,7 +374,6 @@ main .hero .container .info ul li a::before,
 }
 
 .footer-links > ul > li > a:hover::before,
-main .hero .container .info ul li a::before,
 .nav li a::before {
     height: 1%;
     width: 100%;
@@ -378,7 +382,6 @@ main .hero .container .info ul li a::before,
 }
 
 .footer-links > ul > li > a:hover,
-main .hero .container .info ul li a:hover,
 .nav li a:hover {
     color: var(--main-color);
 } 
