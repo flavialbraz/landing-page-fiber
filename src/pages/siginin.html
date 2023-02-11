@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/style-sign.css" />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/responsive.css" />
-    <title>Sign In - Fiber</title>
+    <title>Sign in on your Fiber account - Fiber</title>
   </head>
   <body>
 
@@ -23,18 +23,24 @@
                         <h2>Fiber</h2>
                       </div>
 
-                    <h1>Sign In on your Fiber account</h1>
+                    <h1>Sign in on your Fiber account</h1>
                 <form>
-                    
+
+
+                
                     <label for="email">E-mail</label>
-                    <input type="email" name="email" id="email" placeholder="john@example.com">
+                    <input type="email" name="email" id="email" placeholder="john@example.com" required>
+                    <div class="error-message email-error"></div>
+
+
                     <label for="password">Password</label>
-                    <input type="password" name="password" id="password" placeholder="">
-                    
-                    <button type="submit" class="btn-style-btn signup-btn"> Sign In </button>
+                    <input type="password" name="password" id="password" placeholder="At least 8 characters" required>
+                    <div class="error-message password-error"></div>
+
+                    <button type="submit" class="btn-style-btn signup-btn">Sign in </button>
                 </form>
 
-                <p>Dont have an account? <a href="#">Sign Up</a></p>
+                <p>Dont have an account? <a href="./siginup.html">Sign Up</a></p>
 
             </section>
 
@@ -46,6 +52,6 @@
         </div>
       </main>
      
-      
+      <script src="../js/validation.js"></script>
   </body>
 </html>

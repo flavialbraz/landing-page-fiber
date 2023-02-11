@@ -385,3 +385,8 @@ footer > .container {
 .nav li a:hover {
     color: var(--main-color);
 } 
+
+.error-message {
+    color: #bb1f1fbf;
+    margin-bottom: 20px;
+}
